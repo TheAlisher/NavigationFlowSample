@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    tools:ignore="InvalidNavigation">
+
+    <action
+        android:id="@+id/action_global_signFlowFragment"
+        app:destination="@id/signFlowFragment"
+        app:popUpTo="@id/nav_graph" />
+
+    <action
+        android:id="@+id/action_global_mainFlowFragment"
+        app:destination="@id/mainFlowFragment"
+        app:popUpTo="@id/nav_graph" />
+
+    <fragment
+        android:id="@+id/mainFlowFragment"
+        android:name="com.alish.navigationflowsample.presentation.ui.fragments.main.MainFlowFragment"
+        android:label="flow_fragment_main"
+        tools:layout="@layout/flow_fragment_main" />
+
+    <fragment
+        android:id="@+id/signFlowFragment"
+        android:name="com.alish.navigationflowsample.presentation.ui.fragments.sign.SignFlowFragment"
+        android:label="flow_fragment_sign"
+        tools:layout="@layout/flow_fragment_sign" />
+
+
+</navigation>
